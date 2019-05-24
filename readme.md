@@ -31,6 +31,7 @@ const handle = require('express-async-handler')
 const Sentry = require('@sentry/node');
 
 
+require('dotenv')
 require('require-dir')
 jsonwebtoken
 bcryptjs
