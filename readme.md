@@ -4,7 +4,13 @@ API de anúncios com formulário de intenção de complras
 
 ## Installation
 
+### Dependências
+
 yarn install
+
+### Redis
+
+docker run --name noderedis -p 6379:6379 -d -t redis:alpine
 
 ## Usage
 
@@ -24,6 +30,11 @@ jsonwebtoken
 bcryptjs
 nodemon
 redis
+```
+
+```
+editorconfig
+eslint
 ```
 
 ## License
