@@ -24,8 +24,14 @@ const exphbs = require('express-handlebars')
 const express = require('express')
 const mongoose = require('mongoose')
 const kue = require('kue')
-require('require-dir')
+const Joi = require('joi')
+const Youch = require('youch')
+const validate = require('express-validation')
+const handle = require('express-async-handler')
+const Sentry = require('@sentry/node');
 
+
+require('require-dir')
 jsonwebtoken
 bcryptjs
 nodemon
